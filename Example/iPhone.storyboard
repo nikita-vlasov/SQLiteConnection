@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="-273" y="24"/>
         </scene>
-        <!--View Controller-->
+        <!--Table View Controller-->
         <scene sceneID="PM7-Ih-M3d">
             <objects>
-                <viewController id="D8D-Oq-G0g" sceneMemberID="viewController">
+                <viewController id="D8D-Oq-G0g" customClass="TableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="20w-ND-U7Q"/>
                         <viewControllerLayoutGuide type="bottom" id="KE4-af-ELN"/>
@@ -61,11 +61,18 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="D8D-Oq-G0g" id="3sx-Ma-r3f"/>
+                                    <outlet property="delegate" destination="D8D-Oq-G0g" id="lqb-rR-MPL"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="dMU-z8-Umk"/>
+                    <connections>
+                        <outlet property="tableView" destination="lxy-1K-ior" id="PJK-JT-5LX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NCl-e7-Wve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
