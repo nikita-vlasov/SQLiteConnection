@@ -21,10 +21,10 @@
 		FA4C2752188075D60086C73F /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C2751188075D60086C73F /* ExampleTests.m */; };
 		FA4C275D188076140086C73F /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4C275C188076140086C73F /* iPhone.storyboard */; };
 		FA4C2761188076B40086C73F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C2760188076B40086C73F /* TableViewController.m */; };
-		FA4C2765188077160086C73F /* SQLiteConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C2764188077160086C73F /* SQLiteConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FA4C2767188077610086C73F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4C2766188077610086C73F /* libsqlite3.dylib */; };
 		FA4C276F18807AE40086C73F /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C276E18807AE40086C73F /* Client.m */; };
 		FA4C277218807D730086C73F /* notes.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FA4C277118807D730086C73F /* notes.sqlite */; };
+		FA4C277618807EA20086C73F /* SQLiteConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C277518807EA20086C73F /* SQLiteConnection.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,12 +57,12 @@
 		FA4C275C188076140086C73F /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		FA4C275F188076B40086C73F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		FA4C2760188076B40086C73F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		FA4C2763188077160086C73F /* SQLiteConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteConnection.h; sourceTree = "<group>"; };
-		FA4C2764188077160086C73F /* SQLiteConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteConnection.m; sourceTree = "<group>"; };
 		FA4C2766188077610086C73F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		FA4C276D18807AE40086C73F /* Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
 		FA4C276E18807AE40086C73F /* Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
 		FA4C277118807D730086C73F /* notes.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = notes.sqlite; sourceTree = "<group>"; };
+		FA4C277418807EA20086C73F /* SQLiteConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteConnection.h; sourceTree = "<group>"; };
+		FA4C277518807EA20086C73F /* SQLiteConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteConnection.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +130,8 @@
 				FA4C276E18807AE40086C73F /* Client.m */,
 				FA4C275F188076B40086C73F /* TableViewController.h */,
 				FA4C2760188076B40086C73F /* TableViewController.m */,
+				FA4C277318807EA20086C73F /* SQLiteConnection */,
 				FA4C275B188076010086C73F /* Storyboard */,
-				FA4C2762188077160086C73F /* SQLiteConnection */,
 				FA4C273E188075D60086C73F /* Images.xcassets */,
 				FA4C2733188075D60086C73F /* Supporting Files */,
 			);
@@ -176,14 +176,14 @@
 			name = Storyboard;
 			sourceTree = "<group>";
 		};
-		FA4C2762188077160086C73F /* SQLiteConnection */ = {
+		FA4C277318807EA20086C73F /* SQLiteConnection */ = {
 			isa = PBXGroup;
 			children = (
-				FA4C2763188077160086C73F /* SQLiteConnection.h */,
-				FA4C2764188077160086C73F /* SQLiteConnection.m */,
+				FA4C277418807EA20086C73F /* SQLiteConnection.h */,
+				FA4C277518807EA20086C73F /* SQLiteConnection.m */,
 			);
 			path = SQLiteConnection;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -282,10 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4C277618807EA20086C73F /* SQLiteConnection.m in Sources */,
 				FA4C273D188075D60086C73F /* AppDelegate.m in Sources */,
 				FA4C2761188076B40086C73F /* TableViewController.m in Sources */,
 				FA4C2739188075D60086C73F /* main.m in Sources */,
-				FA4C2765188077160086C73F /* SQLiteConnection.m in Sources */,
 				FA4C276F18807AE40086C73F /* Client.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
