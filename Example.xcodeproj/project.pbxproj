@@ -24,7 +24,7 @@
 		FA4C2767188077610086C73F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4C2766188077610086C73F /* libsqlite3.dylib */; };
 		FA4C276F18807AE40086C73F /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C276E18807AE40086C73F /* Client.m */; };
 		FA4C277218807D730086C73F /* notes.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = FA4C277118807D730086C73F /* notes.sqlite */; };
-		FA4C277618807EA20086C73F /* SQLiteConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C277518807EA20086C73F /* SQLiteConnection.m */; };
+		FA4C277618807EA20086C73F /* SQLiteConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C277518807EA20086C73F /* SQLiteConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
