@@ -19,6 +19,8 @@
 		FA4C2748188075D60086C73F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4C2730188075D60086C73F /* UIKit.framework */; };
 		FA4C2750188075D60086C73F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA4C274E188075D60086C73F /* InfoPlist.strings */; };
 		FA4C2752188075D60086C73F /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C2751188075D60086C73F /* ExampleTests.m */; };
+		FA4C275D188076140086C73F /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4C275C188076140086C73F /* iPhone.storyboard */; };
+		FA4C2761188076B40086C73F /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4C2760188076B40086C73F /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		FA4C274D188075D60086C73F /* ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleTests-Info.plist"; sourceTree = "<group>"; };
 		FA4C274F188075D60086C73F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA4C2751188075D60086C73F /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
+		FA4C275C188076140086C73F /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		FA4C275F188076B40086C73F /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		FA4C2760188076B40086C73F /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 			children = (
 				FA4C273B188075D60086C73F /* AppDelegate.h */,
 				FA4C273C188075D60086C73F /* AppDelegate.m */,
+				FA4C275F188076B40086C73F /* TableViewController.h */,
+				FA4C2760188076B40086C73F /* TableViewController.m */,
+				FA4C275B188076010086C73F /* Storyboard */,
 				FA4C273E188075D60086C73F /* Images.xcassets */,
 				FA4C2733188075D60086C73F /* Supporting Files */,
 			);
@@ -142,6 +150,14 @@
 				FA4C274E188075D60086C73F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA4C275B188076010086C73F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA4C275C188076140086C73F /* iPhone.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4C2737188075D60086C73F /* InfoPlist.strings in Resources */,
+				FA4C275D188076140086C73F /* iPhone.storyboard in Resources */,
 				FA4C273F188075D60086C73F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA4C273D188075D60086C73F /* AppDelegate.m in Sources */,
+				FA4C2761188076B40086C73F /* TableViewController.m in Sources */,
 				FA4C2739188075D60086C73F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
